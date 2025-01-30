@@ -1,0 +1,10 @@
+{
+  "language": "csharp",
+  "run": "dotnet run --project Vision.csproj",
+  "entrypoint": "Program.cs",
+  "onBoot": "dotnet restore Vision.csproj",
+  "env": {
+    "ASPNETCORE_ENVIRONMENT": "Development",
+    "ASPNETCORE_URLS": "http://0.0.0.0:8080"
+  }
+}

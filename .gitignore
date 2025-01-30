@@ -1,0 +1,58 @@
+# .NET build output
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio files
+.vs/
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+
+# IDE specific files
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.tar.gz
+*.zip
+publish/
+Vision_1_Deploy/
+dotnet-sdk-*.pkg
+pip-selfcheck.json

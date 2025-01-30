@@ -1,53 +1,74 @@
-# Presentation of SPHERE
+# Vision+ Medical Imaging
 
+A modern medical imaging application built with .NET 7 and WPF, designed for efficient DICOM image viewing and analysis.
 
-## What is Sphere?
+## Features
 
-SPHERE (PACS solution for Health Research) is a PACS software developed by the EDS-Imaging team within the APHP.
-
-A PACS (Picture Archiving and Communication System)
-is a system for managing medical images through archiving functions. It allows communication
-via network network (DICOM format) and therefore remote or local treatment.
-
-
-The DICOM format, Digital Imaging and Communications in Medicine, is a standard for IT management of
-data from medical imaging.
-
-
-## Main features of the Pacs Sphere
-
-
-- DICOM data collection
-- The export of DICOM data
-
-For this the possible actions are:
-
-* **Runserver:** To launch the PACS
-* **C-ECHO:** Ensure that PACS is listening
-* **C-STORE:** Send medical images DICOM of a PACS to another PACS
-* **C-FIND:** Search data on medical images DICOM in a PACS (on a database or directly in the files)
-* **C-MOVE:** Move medical images DICOM between PACS
-* **DICOMWEB:** Is the DICOM standard for web-based medical imaging. This is a set of RESTful services
-    
-    The main endpoints supported by SPHERE are:
-    
-    * **WADO-RS** for retrieving DICOM files, metadata in XML or JSON forms, bulk data separated from metadata and rendering images in consumer format
-    * **STOW-RS** for storing (sending) DICOM files or separate metadata and bulk data
-    * **QIDO-RS** for querying collections (databases, registers) of DICOM objects
-
-
-* **API Annotation:** An API that allows you to manage annotations
-
+- Modern and intuitive user interface
+- DICOM image viewing and manipulation
+- Advanced image analysis tools
+- Patient data management
+- Integration with SPHERE PACS system
 
 ## Prerequisites
 
+- Windows OS
+- .NET 7.0 SDK or later
+- Visual Studio 2022 (recommended)
 
-> ** _ Note: _ ** The current implementation of the SPEHERE supports:
->- Versions of Python 3 of 3.6.1 to 3.8
+## Getting Started
 
-## Contacts
+1. Clone the repository
+```bash
+git clone [your-repository-url]
+cd Vision+
+```
 
-The following people can be contacted according to the subject:
+2. Build the project
+```bash
+dotnet build
+```
 
-- Project Manager: **Aurélian Maire** @mail: **Aurelien.maire@aphp.fr**
-- Lead Developer Python: **Ossama Achouri** @mail: **ossama.achouri-ext@aphp.fr**
+3. Run the application
+```bash
+dotnet run
+```
+
+## Project Structure
+
+- `Vision_1/` - Main WPF application
+  - `MainWindow.xaml` - Main application window
+  - `Views/` - Application views
+- `Dependencies/` - External dependencies and libraries
+- `docs/` - Documentation
+- `tests/` - Unit tests
+
+## Dependencies
+
+- fo-dicom (5.1.0)
+- Microsoft.ML (2.0.0)
+- Microsoft.ML.Vision (2.0.0)
+- SixLabors.ImageSharp (3.0.1)
+- MaterialDesignThemes (4.9.0)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## SPHERE Integration
+
+This project integrates with SPHERE (PACS solution for Health Research), developed by the EDS-Imaging team within the APHP. For more information about SPHERE, see below:
+
+### What is Sphere?
+
+SPHERE is a PACS software that provides:
+- DICOM data collection
+- DICOM data export
+- DICOMWEB support
+- Annotation API
+
+For full SPHERE documentation, please visit the `docs/` directory.

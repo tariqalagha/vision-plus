@@ -1,0 +1,42 @@
+<Window x:Class="Vision_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Vision+ Medical Imaging" Height="900" Width="1600">
+    <DockPanel>
+        <!-- Top Menu -->
+        <Menu DockPanel.Dock="Top" Background="#2C3E50" Foreground="White">
+            <MenuItem Header="File">
+                <MenuItem Header="Open DICOM"/>
+                <MenuItem Header="Save"/>
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+            <MenuItem Header="Tools">
+                <MenuItem Header="Image Analysis"/>
+                <MenuItem Header="Settings"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Main Content -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Left Panel -->
+            <StackPanel Grid.Column="0" Background="#F5F6FA">
+                <TextBlock Text="Patient List" 
+                         Padding="10"
+                         FontSize="18"/>
+            </StackPanel>
+
+            <!-- Main Viewer -->
+            <Grid Grid.Column="1">
+                <TextBlock Text="Vision+ Medical Imaging"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          FontSize="24"/>
+            </Grid>
+        </Grid>
+    </DockPanel>
+</Window>
